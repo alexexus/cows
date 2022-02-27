@@ -1,0 +1,302 @@
+html {
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background: #ffffff;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #5aefed;
+    z-index: 9998;
+}
+
+.footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0.5rem;
+    background-color: #5aefed;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #f2f2f2;
+    z-index: 9997;
+}
+
+.image,
+.text {
+    display: inline-block;
+}
+
+.text {
+    vertical-align: middle;
+    position: relative;
+    color: #000000;
+    font-family: inherit;
+    font-size: 3rem;
+}
+
+form {
+    border-radius: 5px;
+    border: 4px double #f63333;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+}
+
+.index-form {
+    width: 520px;
+    height: 300px;
+    margin: -143px 0 0 -260px;
+}
+
+.login-form {
+    width: 350px;
+    height: 270px;
+    margin: -128px 0 0 -175px;
+}
+
+.register-form {
+    width: 350px;
+    height: 430px;
+    margin: -208px 0 0 -175px;
+}
+
+.error-form {
+    width: 380px;
+    height: 130px;
+    margin: -73px 0 0 -190px;
+}
+
+.game-form {
+    width: 560px;
+    height: 450px;
+    margin: -218px 0 0 -280px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.label-ed {
+    float: left;
+    font-size: 0.7rem;
+    font-family: inherit;
+    color: gray;
+}
+
+.error-message {
+    font-family: inherit;
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: red;
+}
+
+.btn {
+    width: 100%;
+    background-color: #0084bf;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+.btn:hover {
+    background-color: #0073b1;
+}
+
+.btn-link,
+.btn-link-ind {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: #1795e3;
+    padding: 0;
+    text-decoration: underline;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.btn-link:active,
+.btn-link-ind:active {
+    color: #ff0000;
+}
+
+.btn-link-ind {
+    font-size: 1.0rem;
+}
+
+label {
+    font-family: inherit;
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: gray;
+}
+
+.form-message {
+    font-family: inherit;
+    font-size: 1.0rem;
+    font-weight: normal;
+    color: #645064;
+    text-align: justify;
+    padding: 10px;
+}
+
+div.tab {
+    overflow: hidden;
+    border: 1px solid #83a4c4;
+    background-color: white;
+}
+
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 15px;
+    transition: 0.3s;
+    font-size: 16px;
+    color: #83a4c4;
+}
+
+div.tab button:hover {
+    background-color: #e3f1fe;
+}
+
+div.tab button.active {
+    background-color: #e3f1fe;
+}
+
+.tabcontent {
+    padding: 5px 10px;
+    border: 1px solid #83a4c4;
+    border-top: none;
+    height: 320px;
+    min-height: 320px;
+    max-height: 320px;
+}
+
+.game-table {
+    border-radius: 10px;
+}
+
+.game-table td {
+    vertical-align: top;
+}
+
+.game-moves,
+.game-rating {
+    border: 1px solid #83a4c4;
+    height: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.game-moves thead, .game-moves tbody,
+.game-rating thead, .game-rating tbody {
+    display: block;
+}
+
+.game-moves tbody,
+.game-rating tbody {
+    overflow-y: scroll;
+    height: 197px;
+}
+
+.game-moves th, .game-moves td,
+.game-rating th, .game-rating td {
+    border: 1px solid #83a4c4;
+    font-size: 0.9em;
+    text-align: center;
+    color: #645064;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.game-moves th,
+.game-moves td {
+    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
+}
+
+.game-moves th,
+.game-rating th {
+    background-color: #f5f2f0;
+    color: #645064;
+}
+
+.game-moves tr:hover,
+.game-rating tr:hover {
+    background: #e3f1fe;
+}
+
+.game-controls {
+    table-layout: fixed;
+    width: 100%;
+    padding: 5px;
+    border-spacing: 0px;
+}
+
+.game-controls th {
+    text-align: center;
+    padding: 0px;
+}
+
+.guess-text {
+    height: 30px;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    color: #645064;
+    padding: 0px;
+}
+
+.table-button {
+    height: 100%;
+    width: 100%;
+    font-size: 1.1em;
+    color: #645064;
+}
+
+.game-message,
+.game-label {
+    font-family: inherit;
+    font-size: 1.0rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+.game-message {
+    color: #645064;
+}
+
+.game-label {
+    color: darkgray;
+}

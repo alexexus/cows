@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="cows:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/cows_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="cows" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: tomcat:catalina:5.5.23" />
+          <element id="library" level="project" name="Maven: commons-modeler:commons-modeler:2.0" />
+          <element id="library" level="project" name="Maven: commons-digester:commons-digester:1.2" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging-api:1.0.4" />
+          <element id="library" level="project" name="Maven: mx4j:mx4j-jmx:2.1.1" />
+          <element id="library" level="project" name="Maven: xml-apis:xml-apis:1.0.b2" />
+          <element id="library" level="project" name="Maven: org.hsqldb:hsqldb:2.6.1" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="cows/web/Web" />
+    </root>
+  </artifact>
+</component>
